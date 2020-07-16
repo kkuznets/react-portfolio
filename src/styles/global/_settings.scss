@@ -1,0 +1,443 @@
+//  Foundation for Sites Settings
+//  -----------------------------
+//
+//  Table of Contents:
+//
+//   1. Global
+//   2. Breakpoints
+//   3. The Grid
+//   4. Base Typography
+//   5. Typography Helpers
+//   6. Abide
+//   7. Accordion
+//   8. Accordion Menu
+//   9. Badge
+//  10. Breadcrumbs
+//  11. Button
+//  12. Button Group
+//  13. Callout
+//  14. Card
+//  15. Close Button
+//  16. Drilldown
+//  17. Dropdown
+//  18. Dropdown Menu
+//  19. Flexbox Utilities
+//  20. Forms
+//  21. Label
+//  22. Media Object
+//  23. Menu
+//  24. Meter
+//  25. Off-canvas
+//  26. Orbit
+//  27. Pagination
+//  28. Progress Bar
+//  29. Prototype Arrow
+//  30. Prototype Border-Box
+//  31. Prototype Border-None
+//  32. Prototype Bordered
+//  33. Prototype Display
+//  34. Prototype Font-Styling
+//  35. Prototype List-Style-Type
+//  36. Prototype Overflow
+//  37. Prototype Position
+//  38. Prototype Rounded
+//  39. Prototype Separator
+//  40. Prototype Shadow
+//  41. Prototype Sizing
+//  42. Prototype Spacing
+//  43. Prototype Text-Decoration
+//  44. Prototype Text-Transformation
+//  45. Prototype Text-Utilities
+//  46. Responsive Embed
+//  47. Reveal
+//  48. Slider
+//  49. Switch
+//  50. Table
+//  51. Tabs
+//  52. Thumbnail
+//  53. Title Bar
+//  54. Tooltip
+//  55. Top Bar
+//  56. Xy Grid
+
+@import '~foundation-sites/scss/util/util';
+
+// 1. Global
+// ---------
+
+$global-font-size: 100%;
+$global-width: rem-calc(1200);
+$global-lineheight: 1.5;
+$foundation-palette: (
+  primary: #f1404b,
+  secondary: #222527,
+  success: #3adb76,
+  warning: #ffae00,
+  alert: #cc4b37,
+);
+$light-gray: #e6e6e6;
+$medium-gray: #cacaca;
+$dark-gray: #888;
+$black: #0a0a0a;
+$white: #fefefe;
+$dark-body: #191919;
+$dark-text: #9e9e9e;
+$dark-icons: #696969;
+$dark-boxes: #1f1f1f;
+$dark-buttons: #343434;
+$body-background: $white;
+$body-font-color: $dark-gray;
+$body-font-family: 'Gilroy-Medium';
+$body-antialiased: true;
+$global-margin: 1rem;
+$global-padding: 1rem;
+$global-position: 1rem;
+$global-weight-normal: normal;
+$global-weight-bold: bold;
+$global-radius: 1.5625rem;
+$global-menu-padding: 0.7rem 1rem;
+$global-menu-nested-margin: 1rem;
+$global-text-direction: ltr;
+$global-flexbox: true;
+$global-prototype-breakpoints: false;
+$global-button-cursor: auto;
+$global-color-pick-contrast-tolerance: 0;
+$print-transparent-backgrounds: true;
+
+@include add-foundation-colors;
+$print-hrefs: true;
+
+// 2. Breakpoints
+// --------------
+
+$breakpoints: (
+  small: 0,
+  medium: 640px,
+  large: 1024px,
+  xlarge: 1200px,
+  xxlarge: 1440px,
+);
+$print-breakpoint: large;
+$breakpoint-classes: (small medium large);
+
+// 3. The Grid
+// -----------
+
+$grid-row-width: $global-width;
+$grid-column-count: 12;
+$grid-column-gutter: (
+  small: 20px,
+  medium: 30px,
+);
+$grid-column-align-edge: true;
+$grid-column-alias: 'columns';
+$block-grid-max: 8;
+
+// 4. Base Typography
+// ------------------
+
+$header-font-family: 'Gilroy-Bold';
+$header-font-weight: $global-weight-bold;
+$header-font-style: normal;
+$font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
+$header-color: $secondary-color;
+$header-lineheight: 1.4;
+$header-margin-bottom: 0.5rem;
+$header-styles: (
+  small: (
+    'h1': ('font-size': 36),
+    'h2': ('font-size': 30),
+    'h3': ('font-size': 22),
+    'h4': ('font-size': 18),
+    'h5': ('font-size': 17),
+    'h6': ('font-size': 16),
+  ),
+  medium: (
+    'h1': ('font-size': 34),
+    'h2': ('font-size': 30),
+    'h3': ('font-size': 22),
+    'h4': ('font-size': 22),
+    'h5': ('font-size': 20),
+    'h6': ('font-size': 16),
+  ),
+  large: (
+    'h1': ('font-size': 48),
+    'h2': ('font-size': 48),
+    'h3': ('font-size': 24),
+    'h4': ('font-size': 22),
+    'h5': ('font-size': 20),
+    'h6': ('font-size': 16),
+  ),
+);
+$header-text-rendering: optimizeLegibility;
+$small-font-size: 80%;
+$header-small-font-color: $medium-gray;
+$paragraph-lineheight: rem-calc(30);
+$paragraph-margin-bottom: 1rem;
+$paragraph-text-rendering: optimizeLegibility;
+$code-color: $black;
+$code-font-family: $font-family-monospace;
+$code-font-weight: $global-weight-normal;
+$code-background: $light-gray;
+$code-border: 1px solid $medium-gray;
+$code-padding: rem-calc(2 5 1);
+$anchor-color: $primary-color;
+$anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
+$anchor-text-decoration: none;
+$anchor-text-decoration-hover: none;
+$hr-width: $global-width;
+$hr-border: 1px solid $medium-gray;
+$hr-margin: rem-calc(20) auto;
+$list-lineheight: $paragraph-lineheight;
+$list-margin-bottom: $paragraph-margin-bottom;
+$list-style-type: disc;
+$list-style-position: outside;
+$list-side-margin: 1.25rem;
+$list-nested-side-margin: 1.25rem;
+$defnlist-margin-bottom: 1rem;
+$defnlist-term-weight: $global-weight-bold;
+$defnlist-term-margin-bottom: 0.3rem;
+$blockquote-color: $dark-gray;
+$blockquote-padding: rem-calc(9 20 0 19);
+$blockquote-border: 1px solid $medium-gray;
+$cite-font-size: rem-calc(13);
+$cite-color: $dark-gray;
+$cite-pseudo-content: '\2014 \0020';
+$keystroke-font: $font-family-monospace;
+$keystroke-color: $black;
+$keystroke-background: $light-gray;
+$keystroke-padding: rem-calc(2 4 0);
+$keystroke-radius: $global-radius;
+$abbr-underline: 1px dotted $black;
+
+// 5. Typography Helpers
+// ---------------------
+
+$lead-font-size: $global-font-size * 1.25;
+$lead-lineheight: 1.6;
+$subheader-lineheight: 1.4;
+$subheader-color: $dark-gray;
+$subheader-font-weight: $global-weight-normal;
+$subheader-margin-top: 0.2rem;
+$subheader-margin-bottom: 0.5rem;
+$stat-font-size: 2.5rem;
+
+// 11. Button
+// ----------
+
+$button-font-family: 'CircularStd';
+$button-padding: 0.75em 2em;
+$button-margin: 0 0 $global-margin 0;
+$button-fill: solid;
+$button-background: $primary-color;
+$button-background-hover: scale-color($button-background, $lightness: -15%);
+$button-color: $white;
+$button-color-alt: $black;
+$button-radius: $global-radius;
+$button-hollow-border-width: 2px;
+$button-sizes: (
+  tiny: 0.6rem,
+  small: 0.9375rem,
+  default: 1.125rem,
+  large: 1.25rem,
+);
+$button-palette: $foundation-palette;
+$button-opacity-disabled: 0.25;
+$button-background-hover-lightness: 0;
+$button-hollow-hover-lightness: 0;
+$button-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+$button-responsive-expanded: false;
+
+// 19. Flexbox Utilities
+// ---------------------
+
+$flex-source-ordering-count: 6;
+$flexbox-responsive-breakpoints: true;
+
+// 29. Prototype Arrow
+// -------------------
+
+$prototype-arrow-directions: (
+  down,
+  up,
+  right,
+  left
+);
+$prototype-arrow-size: 0.4375rem;
+$prototype-arrow-color: $black;
+
+// 30. Prototype Border-Box
+// ------------------------
+
+$prototype-border-box-breakpoints: $global-prototype-breakpoints;
+
+// 31. Prototype Border-None
+// -------------------------
+
+$prototype-border-none-breakpoints: $global-prototype-breakpoints;
+
+// 32. Prototype Bordered
+// ----------------------
+
+$prototype-bordered-breakpoints: $global-prototype-breakpoints;
+$prototype-border-width: rem-calc(1);
+$prototype-border-type: solid;
+$prototype-border-color: $medium-gray;
+
+// 33. Prototype Display
+// ---------------------
+
+$prototype-display-breakpoints: $global-prototype-breakpoints;
+$prototype-display: (
+  inline,
+  inline-block,
+  block,
+  table,
+  table-cell
+);
+
+// 34. Prototype Font-Styling
+// --------------------------
+
+$prototype-font-breakpoints: $global-prototype-breakpoints;
+$prototype-wide-letter-spacing: rem-calc(4);
+$prototype-font-normal: $global-weight-normal;
+$prototype-font-bold: $global-weight-bold;
+
+// 35. Prototype List-Style-Type
+// -----------------------------
+
+$prototype-list-breakpoints: $global-prototype-breakpoints;
+$prototype-style-type-unordered: (
+  disc,
+  circle,
+  square
+);
+$prototype-style-type-ordered: (
+  decimal,
+  lower-alpha,
+  lower-latin,
+  lower-roman,
+  upper-alpha,
+  upper-latin,
+  upper-roman
+);
+
+// 36. Prototype Overflow
+// ----------------------
+
+$prototype-overflow-breakpoints: $global-prototype-breakpoints;
+$prototype-overflow: (
+  visible,
+  hidden,
+  scroll
+);
+
+// 37. Prototype Position
+// ----------------------
+
+$prototype-position-breakpoints: $global-prototype-breakpoints;
+$prototype-position: (
+  static,
+  relative,
+  absolute,
+  fixed
+);
+$prototype-position-z-index: 975;
+
+// 38. Prototype Rounded
+// ---------------------
+
+$prototype-rounded-breakpoints: $global-prototype-breakpoints;
+$prototype-border-radius: rem-calc(3);
+
+// 39. Prototype Separator
+// -----------------------
+
+$prototype-separator-breakpoints: $global-prototype-breakpoints;
+$prototype-separator-align: center;
+$prototype-separator-height: rem-calc(2);
+$prototype-separator-width: 3rem;
+$prototype-separator-background: $primary-color;
+$prototype-separator-margin-top: $global-margin;
+
+// 40. Prototype Shadow
+// --------------------
+
+$prototype-shadow-breakpoints: $global-prototype-breakpoints;
+$prototype-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),
+                       0 2px 10px 0 rgba(0,0,0,.12);
+
+// 41. Prototype Sizing
+// --------------------
+
+$prototype-sizing-breakpoints: $global-prototype-breakpoints;
+$prototype-sizing: (
+  width,
+  height
+);
+$prototype-sizes: (
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  100: 100%
+);
+
+// 42. Prototype Spacing
+// ---------------------
+
+$prototype-spacing-breakpoints: $global-prototype-breakpoints;
+$prototype-spacers-count: 3;
+
+// 43. Prototype Text-Decoration
+// -----------------------------
+
+$prototype-decoration-breakpoints: $global-prototype-breakpoints;
+$prototype-text-decoration: (
+  overline,
+  underline,
+  line-through,
+);
+
+// 44. Prototype Text-Transformation
+// ---------------------------------
+
+$prototype-transformation-breakpoints: $global-prototype-breakpoints;
+$prototype-text-transformation: (
+  lowercase,
+  uppercase,
+  capitalize
+);
+
+// 45. Prototype Text-Utilities
+// ----------------------------
+
+$prototype-utilities-breakpoints: $global-prototype-breakpoints;
+$prototype-text-overflow: ellipsis;
+
+// 52. Thumbnail
+// -------------
+
+$thumbnail-border: 4px solid $white;
+$thumbnail-margin-bottom: $global-margin;
+$thumbnail-shadow: 0 0 0 1px rgba($black, 0.2);
+$thumbnail-shadow-hover: 0 0 6px 1px rgba($primary-color, 0.5);
+$thumbnail-transition: box-shadow 200ms ease-out;
+$thumbnail-radius: $global-radius;
+
+// 56. Xy Grid
+// -----------
+
+$xy-grid: true;
+$grid-container: $global-width;
+$grid-columns: 12;
+$grid-margin-gutters: (
+  small: 35px,
+  medium: 40px,
+  large: 80px,
+  xlarge: 30px
+);
+$grid-padding-gutters: $grid-margin-gutters;
+$grid-container-padding: $grid-padding-gutters;
+$grid-container-max: $global-width;
+$xy-block-grid-max: 8;

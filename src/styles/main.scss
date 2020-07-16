@@ -1,0 +1,51 @@
+/*
+  Foundation
+*/
+@import '~foundation-sites/scss/foundation';
+
+/*
+  BEM
+*/
+@import '~sass-bem/bem';
+
+/*
+  Settings
+*/
+@import './global/settings';
+
+/*
+  Fonts
+*/
+@import './global/fonts';
+
+/*
+  Global styles
+*/
+@include foundation-global-styles;
+@include foundation-typography;
+
+// Grids
+@include foundation-xy-grid-classes;
+
+// Generic components
+@include foundation-button;
+
+// Helpers
+@include foundation-flex-classes;
+
+/*
+  General
+*/
+@import './global/general';
+
+/*
+  Modules
+*/
+@import './modules/header';
+@import './modules/home';
+@import './modules/footer';
+
+/*
+  Scheme
+*/
+@import './global/scheme';

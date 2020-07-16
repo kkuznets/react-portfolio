@@ -1,0 +1,22 @@
+/*
+  General
+*/
+
+p {
+  font-size: rem-calc(18.4);
+  letter-spacing: rem-calc(0.3);
+  line-height: 1.8;
+
+  @include breakpoint(large) {
+    font-size: rem-calc(19);
+    line-height: 1.9;
+  }
+}
+
+.button {
+  font-size: 1rem;
+
+  @include breakpoint(large) {
+    font-size: 1.125rem;
+  }
+}

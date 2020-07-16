@@ -1,0 +1,95 @@
+/* Dark mode styles go here! */
+
+.dark-mode {
+  color: $dark-text;
+  background-color: $dark-body;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $white;
+  }
+
+  .header__branding {
+    [class*='icon-'] {
+      color: $white;
+    }
+  }
+
+  .skills__box {
+    box-shadow: 0 rem-calc(15) rem-calc(35) rgba(0, 0, 0, 0.5);
+
+    [class*='icon-'] {
+      color: $dark-icons;
+    }
+
+    @include breakpoint(xlarge) {
+      background-color: $dark-boxes;
+    }
+  }
+
+  .skills__box,
+  .projects__box {
+    box-shadow: none;
+
+    img {
+      box-shadow: 0 rem-calc(15) rem-calc(35) rgba(26, 26, 26, 0.5);
+    }
+  }
+
+  .projects__content {
+    strong {
+      color: $white;
+    }
+  }
+
+  .header__contact,
+  .projects__box,
+  .footer__contact {
+    .button {
+      color: $white;
+      background: $dark-buttons;
+      border: 1px transparent solid;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $black;
+        background: $white;
+        border: 1px $white solid;
+      }
+    }
+  }
+
+  .header__contact {
+    .mode {
+      svg {
+        stroke: $dark-text;
+      }
+    }
+  }
+
+  .footer__copyright,
+  .about__content {
+    a {
+      color: $white;
+      transition: all 0.25s ease-out;
+      border-bottom: 1px solid transparent;
+      padding-bottom: rem-calc(4px);
+
+      &:hover {
+        color: $white;
+        border-bottom: 1px solid $white;
+        padding-bottom: rem-calc(4px);
+      }
+    }
+  }
+}
+
+.dark-mode,
+.light-mode {
+  transition: all 0.5s ease;
+}

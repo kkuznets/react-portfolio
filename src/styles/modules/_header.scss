@@ -1,0 +1,69 @@
+/*
+  Header
+*/
+
+.header {
+  padding: rem-calc(25) rem-calc(15) rem-calc(45);
+
+  @include breakpoint(medium) {
+    padding: rem-calc(35) rem-calc(15) rem-calc(40);
+  }
+
+  @include breakpoint(large) {
+    padding: rem-calc(65) rem-calc(15) rem-calc(100);
+  }
+
+  @include e('branding') {
+    [class*='icon-'] {
+      font-size: rem-calc(32);
+      color: $primary-color;
+      vertical-align: middle;
+      -webkit-font-smoothing: none;
+
+      @include breakpoint(large) {
+        font-size: rem-calc(48);
+      }
+    }
+  }
+
+  @include e('contact') {
+    text-align: right;
+
+    .button {
+      background: $primary-color;
+      background: -moz-linear-gradient(
+        left,
+        lighten($primary-color, 8%) 0%,
+        $primary-color 100%
+      );
+      background: -webkit-linear-gradient(
+        left,
+        lighten($primary-color, 8%) 0%,
+        $primary-color 100%
+      );
+      background: linear-gradient(
+        to right,
+        lighten($primary-color, 8%) 0%,
+        $primary-color 100%
+      );
+      border: rem-calc(1) lighten($primary-color, 8%) solid;
+      margin-bottom: 0;
+    }
+
+    .mode {
+      width: rem-calc(25px);
+      height: rem-calc(25px);
+      margin-right: rem-calc(15px);
+      cursor: pointer;
+      outline: none;
+
+      @include breakpoint(medium) {
+        margin-right: rem-calc(25px);
+      }
+
+      svg {
+        stroke: $dark-gray;
+      }
+    }
+  }
+}
