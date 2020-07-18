@@ -11,16 +11,13 @@
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/kkuznets
 
-
-
-
 # React Portfolio <!-- omit in toc -->
 
-> Lorem ipsum dolor sit amet.
+> Minimalistic lightweight React [portfolio](https://react-portfolio-kkuznets.netlify.app/) built using Gatsby.
 
 [![Contributors][contributors-shield]][contributors-url] [![Forks][forks-shield]][forks-url] [![Stargazers][stars-shield]][stars-url] [![Issues][issues-shield]][issues-url] [![MIT License][license-shield]][license-url] [![LinkedIn][linkedin-shield]][linkedin-url]
 
-<img src="demo.gif" alt="React Portfolio Demo"/>
+<img src="src/images/demo.gif" alt="React Portfolio Demo"/>
 
 ## 🚩 Table of Contents <!-- omit in toc -->
 
@@ -35,14 +32,18 @@
 
 ## 📦 Built With
 
-* [**First Item**](link) : Description
-* [**Second Item**](link) : Description
+-  [Gatsby](<[link](https://www.gatsbyjs.org/)>)
+-  [[GraphQL]](https://graphql.org/)
 
 ## 🚀 Features
 
-* First Feature
+-  Features mobile-first clean minimalistic design
+-  Easy to add projects
+-  Provides links to resume, social media and contact email.
 
 ## 🔧 Getting Started
+
+To tinker with the live website, simply follow the [link](https://react-portfolio-kkuznets.netlify.app/).
 
 This product is open source, so you can create a pull request (PR) after you fix issues you find. Run npm scripts and develop yourself with the following process.
 
@@ -52,14 +53,20 @@ Fork `master` branch into your personal repository. Clone it to local computer. 
 
 <img src="https://docs.github.com/assets/images/help/repository/fork_button.jpg" alt="Fork the React Portfolio"/>
 
-```zsh
+```sh
 $ git clone https://github.com/YOUR-USERNAME/react-portfolio
 $ npm install
 ```
 
 ### Usage
 
-Lorem Ipsum dolor sit amet
+After installation, simply run:
+
+```sh
+$ npm run develop
+```
+
+And start editing the data in `/src/mock/data.js`!
 
 ### Pull Request
 
@@ -69,10 +76,10 @@ For more information, please refer to the Contributing section.
 
 ## 💬 Contributing
 
-* [Code of Conduct](https://github.com/kkuznets/react-portfolio/blob/master/CODE_OF_CONDUCT.md)
-* [Contributing Guideline](https://github.com/kkuznets/react-portfolio/blob/master/CONTRIBUTING.md)
-* [Commit Convention](https://github.com/kkuznets/react-portfolio/blob/master/docs/COMMIT_MESSAGE_CONVENTION.md)
-* [Issue Guidelines](https://github.com/kkuznets/react-portfolio/tree/master/.github/ISSUE_TEMPLATE)
+-  [Code of Conduct](https://github.com/kkuznets/react-portfolio/blob/master/CODE_OF_CONDUCT.md)
+-  [Contributing Guideline](https://github.com/kkuznets/react-portfolio/blob/master/CONTRIBUTING.md)
+-  [Commit Convention](https://github.com/kkuznets/react-portfolio/blob/master/docs/COMMIT_MESSAGE_CONVENTION.md)
+-  [Issue Guidelines](https://github.com/kkuznets/react-portfolio/tree/master/.github/ISSUE_TEMPLATE)
 
 ## 📜 License
 
