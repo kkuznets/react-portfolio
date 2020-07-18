@@ -6,17 +6,20 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/main.scss';
 
 export default () => {
-  const { title, lang, description } = headData;
+   const { title, lang, description } = headData;
 
-  return (
-    <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>{title || 'Gatsby Simplefolio'}</title>
-        <html lang={lang || 'en'} />
-        <meta name="description" content={description || 'Gatsby Simplefolio'} />
-      </Helmet>
-      <App />
-    </>
-  );
+   return (
+      <>
+         <Helmet>
+            <meta charSet='utf-8' />
+            <title>{title || 'Kirill Kuznetsov Portfolio'}</title>
+            <html lang={lang || 'en'} />
+            <meta
+               name='description'
+               content={description || 'Full Stack Developer.'}
+            />
+         </Helmet>
+         <App />
+      </>
+   );
 };
