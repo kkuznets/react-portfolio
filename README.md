@@ -32,8 +32,8 @@
 
 ## 📦 Built With
 
--  [Gatsby](<[link](https://www.gatsbyjs.org/)>)
--  [[GraphQL]](https://graphql.org/)
+-  [Gatsby](https://www.gatsbyjs.org/)
+-  [GraphQL](https://graphql.org/)
 
 ## 🚀 Features
 
