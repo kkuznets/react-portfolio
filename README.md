@@ -37,8 +37,8 @@
 
 ## 🚀 Features
 
--  Features mobile-first clean minimalistic design
--  Easy to add projects
+-  Features mobile-first clean minimalistic design.
+-  Easy to add projects.
 -  Provides links to resume, social media and contact email.
 
 ## 🔧 Getting Started
