@@ -1,12 +1,12 @@
-[contributors-shield]: https://img.shields.io/github/contributors/kkuznets/react-portfolio.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/kkuznets/react-portfolio.svg?style=for-the-badge&color=blueviolet
 [contributors-url]: https://github.com/kkuznets/react-portfolio/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/kkuznets/react-portfolio.svg?style=for-the-badge&color=blue
+[forks-shield]: https://img.shields.io/github/forks/kkuznets/react-portfolio.svg?style=for-the-badge&color=brightgreen
 [forks-url]: https://github.com/kkuznets/react-portfolio/network/members
-[stars-shield]: https://img.shields.io/github/stars/kkuznets/react-portfolio.svg?style=for-the-badge&color=important
+[stars-shield]: https://img.shields.io/github/stars/kkuznets/react-portfolio.svg?style=for-the-badge&color=orange
 [stars-url]: https://github.com/kkuznets/react-portfolio/stargazers
-[issues-shield]: https://img.shields.io/github/issues/kkuznets/react-portfolio.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/kkuznets/react-portfolio.svg?style=for-the-badge&color=blue
 [issues-url]: https://github.com/kkuznets/react-portfolio/issues
-[license-shield]: https://img.shields.io/github/license/kkuznets/react-portfolio.svg?style=for-the-badge&color=blueviolet
+[license-shield]: https://img.shields.io/github/license/kkuznets/react-portfolio.svg?style=for-the-badge&color=ff69b4
 [license-url]: https://github.com/kkuznets/react-portfolio/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/kkuznets
