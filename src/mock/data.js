@@ -62,6 +62,17 @@ export const projectsData = [
       repo: 'https://github.com/kkuznets/Employee-Management-System',
       url: '',
    },
+   {
+      id: nanoid(),
+      img: 'googlebookssearch.png',
+      title: 'React Google Books Search',
+      info:
+         'Agile full-stack web application that allows users to search, track and save books for reading list using Google Books library.',
+      info2:
+         'Runs on React, Express, MongoDB, Google Books API and your attention,',
+      repo: 'https://github.com/kkuznets/google-books-search',
+      url: 'https://google-books-search-kkuznets.herokuapp.com/',
+   },
 ];
 
 // CONTACT DATA
